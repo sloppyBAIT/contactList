@@ -34,6 +34,12 @@ class ContactFullDetailTableViewController: UITableViewController {
         
         cell.textLabel?.text = (indexPath.row == 0) ? contact.email : contact.phoneNumber
         
+        if indexPath.row == 0 {
+            cell.accessoryView = UIImageView(image: UIImage(systemName: "mail.fill"))
+        } else {
+            cell.accessoryView = UIImageView(image: UIImage(systemName: "phone.fill"))
+        }
+        
         return cell
     }
     

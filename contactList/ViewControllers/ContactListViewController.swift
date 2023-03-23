@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UITableViewController{
+class ContactListViewController: UITableViewController{
     
     var contactList = Person.getContactList()
     
@@ -16,7 +16,7 @@ class ViewController: UITableViewController{
     }
 }
 
-extension ViewController {
+extension ContactListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return contactList.count
     }

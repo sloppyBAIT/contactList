@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Contact Full Detail Table View Controller-->
         <scene sceneID="nSm-g7-Fcm">
             <objects>
                 <tableViewController id="0nx-yz-sWz" customClass="ContactFullDetailTableViewController" customModule="contactList" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,16 +32,16 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" systemItem="contacts" id="Z2N-CT-13M"/>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="mmw-c5-qwY"/>
+                    <navigationItem key="navigationItem" id="mmw-c5-qwY"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bZz-gO-WYY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="998" y="887"/>
         </scene>
-        <!--Contacts-->
+        <!--Contact List View Controller-->
         <scene sceneID="Gug-rg-ipK">
             <objects>
-                <tableViewController id="0up-wg-in7" customClass="ViewController" customModule="contactList" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="0up-wg-in7" customClass="ContactListViewController" customModule="contactList" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="hCV-4r-pKn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,7 +74,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" systemItem="contacts" id="29O-oR-KMN"/>
-                    <navigationItem key="navigationItem" title="Contacts" id="UU7-rG-6nv"/>
+                    <navigationItem key="navigationItem" id="UU7-rG-6nv"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RmR-us-j6k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -149,11 +149,11 @@
             </objects>
             <point key="canvasLocation" x="1726" y="-214"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Contacts-->
         <scene sceneID="SsS-ds-2AW">
             <objects>
                 <tabBarController id="3uS-1W-QbK" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="BNa-5m-GeP"/>
+                    <navigationItem key="navigationItem" title="Contacts" id="BNa-5m-GeP"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Yy-Xa-CCI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -166,7 +166,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQt-rg-rRj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="214" y="353"/>
+            <point key="canvasLocation" x="202" y="443"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KNW-Zz-Bo8">
@@ -185,7 +185,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EGE-2O-974" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-540" y="353"/>
+            <point key="canvasLocation" x="-567" y="442"/>
         </scene>
     </scenes>
     <resources>
