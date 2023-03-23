@@ -21,27 +21,26 @@ extension ContactListViewController {
         return contactList.count
     }
     
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "showContacts", for: indexPath)
         
-        let randomContact = contactList.randomElement()
+        let contact = contactList[indexPath.row]
         
         var content = cell.defaultContentConfiguration()
-        content.text = randomContact?.fullName
+        content.text = contact.fullName
         
         cell.contentConfiguration = content
         
         return cell
     }
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let contactDetailVC = segue.destination as? ContactDetailViewController else { return }
-        guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        
-        let selectedContact = contactList[indexPath.row]
-        contactDetailVC.contact = selectedContact
-        contactDetailVC.title = selectedContact.fullName
+        if let contactDetailVC = segue.destination as? ContactDetailViewController,
+           let indexPath = tableView.indexPathForSelectedRow {
+            
+            let selectedContact = contactList[indexPath.row]
+            contactDetailVC.contact = selectedContact
+            contactDetailVC.title = selectedContact.fullName
+        }
     }
 }

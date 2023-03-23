@@ -19,14 +19,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="contactList" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4A-8F-eU5">
                                 <rect key="frame" x="106.33333333333333" y="405.66666666666669" width="180.33333333333337" height="40.666666666666686"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" systemColor="labelColor"/>
                                 <size key="shadowOffset" width="1" height="1"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="C4A-8F-eU5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Aks-zb-vK5"/>
                             <constraint firstItem="C4A-8F-eU5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="BPJ-ln-9Uc"/>
