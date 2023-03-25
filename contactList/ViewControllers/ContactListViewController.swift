@@ -11,9 +11,6 @@ class ContactListViewController: UITableViewController{
     
     var contactList = Person.getContactList()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 }
 
 extension ContactListViewController {
