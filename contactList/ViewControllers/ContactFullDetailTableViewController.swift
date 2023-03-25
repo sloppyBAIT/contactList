@@ -17,7 +17,7 @@ class ContactFullDetailTableViewController: UITableViewController {
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return contactList.count
+        contactList.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,13 +41,6 @@ class ContactFullDetailTableViewController: UITableViewController {
         }
         
         return cell
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "contactCell", let contactDetailVC = segue.destination as? ContactDetailViewController, let contact = sender as? Person {
-            contactDetailVC.contact = contact
-            contactDetailVC.title = contact.fullName
-        }
     }
 }
 
