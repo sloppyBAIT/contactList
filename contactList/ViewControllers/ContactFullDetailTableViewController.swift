@@ -8,8 +8,8 @@
 import UIKit
 
 class ContactFullDetailTableViewController: UITableViewController {
-
-    var contactList = Person.getContactList()
+    
+    private var contactList = Person.getContactList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
